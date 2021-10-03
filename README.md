@@ -13,3 +13,5 @@ Nous allons devoir, dans notre dossier « composants », placer nos dossiers qui
 Pour couvrir l'intégralité de la fenêtre, nous allons devoir donner une taille à l'élément central. Or, on ne sait pas encore ce qu'il va contenir (cela varie selon les pages). Ainsi, plutôt que de donner une hauteur fixe, nous allons donner une hauteur minimale avec la propriété « min-height ».
 
 Pour avoir (au minimum) exactement la taille de la fenêtre du navigateur, il va falloir faire du calcul dans CSS, en soustrayant la hauteur de la fenêtre (100 vh) aux dimensions du Header + du Footer.
+
+Pour mettre en place une navigation sur notre site web, nous allons utiliser la populaire librairies react-router-dom, et ses composants « BrowserRouter », « Switch », « Route », et « Link ».
