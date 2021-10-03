@@ -31,10 +31,10 @@ export default function Layout({children}) {
 const Wrapper = styled.div``;
 
 const Main = styled.div`
-min-height: calc(100vh - 192px);
+min-height: calc(100vh - 220px);
 width: 96%;
 max-width: 1240px;
 margin: auto;
 margin-top: 32px;
 `;
-/*100vh - 160px = 100% de la fenêtre moins les 80px du header et du footer*/
+
