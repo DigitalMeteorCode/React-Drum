@@ -1,3 +1,22 @@
+MUSICS CREDITS :
+
+Music: Sentimental Drop [FREE DOWNLOAD] by CYBERPUNKERS
+Source: http://soundcloud.com/cyberpunkers/sentimental-drop-mp3
+License: http://creativecommons.org/licenses/by/3.0/
+Get music free for a link from https://starfrosch.com
+
+Music: The Lonely Journey [FREE DOWNLOAD] by CYBERPUNKERS
+Source: https://soundcloud.com/cyberpunkers/the-lonely-journey-mp3
+License: http://creativecommons.org/licenses/by/3.0/
+Get music free for a link from https://starfrosch.com
+
+Music: Sick Track [FREE DOWNLOAD] by CYBERPUNKERS
+Source: http://soundcloud.com/cyberpunkers/sick-track-mp3
+License: http://creativecommons.org/licenses/by/3.0/
+Get music free for a link from https://starfrosch.com
+
+***
+
 CONSIGNES SUIVIES (cours Digital Campus Live sur STUDI) :
 
 Nous allons dans cette première vidéo initialiser notre projet create-react-app, paramétrer notre fichier « jsconfig.json » et remettre à 0 le style CSS.

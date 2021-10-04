@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 import GridButton from "./GridButton";
+import useSounds from "hooks/useSounds";
 
-const list = ["el1", "el2", "el3", "el4", "el5", "el6", "el7", "el8", "el9"];
+
 
 export default function Home() {
+    const {buttonsList} = useSounds();
     return(
         <Wrapper>
             <Grid>
-                {list.map((el)=>{
-                    return <GridButton key={el}>{el}</GridButton>
+                {buttonsList.map(({ soundPlay }, index)=>{
+                    return <GridButton key={index} soundPlay={soundPlay}/>
                 })}
             </Grid>
         </Wrapper>
@@ -27,7 +29,6 @@ margin: auto;
 padding: 24px;
 width: 900px;
 height: 900px;
-border: solid 1px aqua;
 
 @media(max-width : 640px) {
     width: 300px;

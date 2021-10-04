@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export default function GridButton({ isPlayed = false }) {
+export default function GridButton({ isPlayed = false, soundPlay }) {
     return (
-        <Wrapper isPlayed={isPlayed}>
-
+        <Wrapper isPlayed={isPlayed} onClick={soundPlay}>
         </Wrapper>
     );
 }
@@ -11,8 +10,12 @@ export default function GridButton({ isPlayed = false }) {
 const Wrapper = styled.div`
 border-radius: 5px;
 background: #7952B3;
-background: radial-gradient(circle, #A5E1AD 0%, #7952B3 100%);
+background: radial-gradient(
+    circle, 
+    #A5E1AD 0%, 
+    #7952B3 100%);
 position: relative;
+overflow: hidden;
 &::before{
     content: "";
     position: absolute;
@@ -33,6 +36,9 @@ position: relative;
 }
 &:active::before{
     opacity: 1;
-    background: radial-gradient(circle, #EDFFA9 10%, #AE00FB 80%);
+    background: radial-gradient(
+        circle, 
+        #EDFFA9 10%, 
+        #AE00FB 80%);
 }
 `;
