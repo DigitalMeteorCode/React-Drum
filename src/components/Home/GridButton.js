@@ -52,5 +52,6 @@ overflow: hidden;
     position: absolute;
     top: 15px;
     right: 15px;
+    font-size: 1.2rem;
 }
 `;

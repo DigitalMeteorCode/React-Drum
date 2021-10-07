@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
 
-export default function Header({ isLight, handleToggleTheme }){
+export default function Header(){
     const location = useLocation();
     return (
         <Wrapper>
-            <h1>Hello header</h1>
+            <h1>MUSIC APP</h1>
             <nav>
                 <Link to="/">
                     <MenuEl isCurrentPage={location.pathname === "/"}>HOME</MenuEl>
@@ -14,9 +14,6 @@ export default function Header({ isLight, handleToggleTheme }){
                     <MenuEl isCurrentPage={location.pathname === "/about"}>ABOUT</MenuEl>
                 </Link>
             </nav>
-            <button onClick={handleToggleTheme}>
-                Switch to {isLight ? "dark" : "light"} theme
-            </button>
         </Wrapper>
     );
 }
@@ -25,9 +22,8 @@ const Wrapper = styled.header`
     height: 105px;
     display: flex;
     justify-content: space-between;
-    padding: 0px 24px;
+    padding: 0px 30px;
     align-items: center;
-    border-bottom: solid 1px;
     & nav{
         display: flex;
     }
@@ -36,11 +32,12 @@ const Wrapper = styled.header`
         color: inherit;
     }
     & a:first-child{
-        margin-right: 50px;
+        margin-right: 15px;
     }
 `;
 
 const MenuEl = styled.p`
+    font-size: 2rem;
     padding: 2px;
     border: solid 0.5px ${(props)=>(props.isCurrentPage ? "" : "transparent")};
     &:hover{

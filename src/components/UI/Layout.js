@@ -20,9 +20,9 @@ export default function Layout({children}) {
         <ThemeProvider theme={isLight ? lightTheme : darkTheme}>
             <Wrapper>
                 <GlobalStyle />
-                <Header isLight={isLight} handleToggleTheme={handleToggleTheme} />
+                <Header />
                 <Main>{children}</Main>
-                <Footer />
+                <Footer isLight={isLight} handleToggleTheme={handleToggleTheme} />
             </Wrapper>
         </ThemeProvider>
     );
@@ -31,10 +31,10 @@ export default function Layout({children}) {
 const Wrapper = styled.div``;
 
 const Main = styled.div`
-min-height: calc(100vh - 220px);
+min-height: calc(100vh - 185px);
 width: 96%;
 max-width: 1240px;
 margin: auto;
-margin-top: 32px;
+display: flex;
 `;
 
