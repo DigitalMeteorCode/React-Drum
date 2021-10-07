@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
-export default function GridButton({ isPlayed = false, soundPlay }) {
+export default function GridButton({ isPlayed = false, soundPlay, id, handleSampleChange }) {
     return (
         <Wrapper isPlayed={isPlayed} onClick={soundPlay}>
+            <label onClick={(e) => e.stopPropagation()} htmlFor={id}>
+                🎵
+            </label>
+            <input onClick={(e) => e.stopPropagation()} id={id} type="file" onChange={handleSampleChange} />
         </Wrapper>
     );
 }
@@ -40,5 +44,13 @@ overflow: hidden;
         circle, 
         #EDFFA9 10%, 
         #AE00FB 80%);
+}
+& input {
+    display: none;
+}
+& label {
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }
 `;
